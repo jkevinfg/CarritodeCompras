@@ -11,7 +11,7 @@ function cargarEventListeners(){
     listaCursos.addEventListener('click',agregarCurso)
     carrito.addEventListener('click',eliminarCurso)
     document.addEventListener('DOMContentLoaded',() => {
-        articulosCarrito = JSON.parse(localStorage.getItem('producto'))
+        articulosCarrito = JSON.parse(localStorage.getItem('producto')) || []
         carritoHTML();
     })
 
